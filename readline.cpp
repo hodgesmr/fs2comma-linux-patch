@@ -72,7 +72,7 @@ bool readline(std::string& S, std::istream& is)
 	states cur = S_s;
 	char delim = ',';
 	
-	bool more = is.get(c) != 0;
+	bool more = is.get(c).good();
 	int could_be_endq = 0;
 	bool mapped = 0; //debug purposes; now testing
 
